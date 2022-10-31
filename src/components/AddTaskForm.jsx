@@ -2,8 +2,8 @@ const AddTaskForm = ({newTask, setNewTask, addTask}) => {
     return (
         <>
         {/* Add Task */}
-        <div className='flex w-2/4 mx-auto align-items-center mb-3'>
-          <div className='grow mr-2'>
+        <div className='flex w-11/12 sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-6/12 mx-auto align-items-center mb-3'>
+          <div className='grow mr-1.5 md:mr-2'>
             <input
               value={newTask}
               onChange={ (e) => setNewTask(e.target.value) } 
@@ -13,7 +13,7 @@ const AddTaskForm = ({newTask, setNewTask, addTask}) => {
           <div className='flex-none'>
             <button
               onClick={addTask} 
-              className='text-txt bg-success font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2'
+              className='text-txt bg-success font-medium rounded-lg text-sm px-5 py-2.5 mb-2'
               >Add Task</button>
           </div>
         </div>
